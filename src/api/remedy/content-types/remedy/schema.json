@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "remedies",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "blog",
+    "singularName": "remedy",
+    "pluralName": "remedies",
+    "displayName": "remedy",
     "description": ""
   },
   "options": {
@@ -16,40 +16,31 @@
     }
   },
   "attributes": {
-    "title": {
-      "type": "string",
+    "name": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "author": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      },
+      "type": "string"
     },
     "content": {
-      "type": "richtext",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "richtext"
     },
-    "displayphoto": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "displayPhoto": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
+      "type": "media",
+      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true

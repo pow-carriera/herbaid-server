@@ -1,5 +1,5 @@
 {
-  "/blogs": {
+  "/remedies": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogListResponse"
+                "$ref": "#/components/schemas/RemedyListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/blogs"
+      "operationId": "get/remedies"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
+                "$ref": "#/components/schemas/RemedyResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [],
-      "operationId": "post/blogs",
+      "operationId": "post/remedies",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/BlogRequest"
+              "$ref": "#/components/schemas/RemedyRequest"
             }
           }
         }
       }
     }
   },
-  "/blogs/{id}": {
+  "/remedies/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
+                "$ref": "#/components/schemas/RemedyResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/blogs/{id}"
+      "operationId": "get/remedies/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
+                "$ref": "#/components/schemas/RemedyResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/blogs/{id}",
+      "operationId": "put/remedies/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/BlogRequest"
+              "$ref": "#/components/schemas/RemedyRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [
         {
@@ -501,10 +501,10 @@
           }
         }
       ],
-      "operationId": "delete/blogs/{id}"
+      "operationId": "delete/remedies/{id}"
     }
   },
-  "/blogs/{id}/localizations": {
+  "/remedies/{id}/localizations": {
     "post": {
       "responses": {
         "200": {
@@ -512,7 +512,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogLocalizationResponse"
+                "$ref": "#/components/schemas/RemedyLocalizationResponse"
               }
             }
           }
@@ -569,7 +569,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Remedy"
       ],
       "parameters": [
         {
@@ -583,13 +583,13 @@
           }
         }
       ],
-      "operationId": "post/blogs/{id}/localizations",
+      "operationId": "post/remedies/{id}/localizations",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/BlogLocalizationRequest"
+              "$ref": "#/components/schemas/RemedyLocalizationRequest"
             }
           }
         }

@@ -29,5 +29,8 @@
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
+    "resolutions": {
+    "ckeditor5-build-strapi-wysiwyg": "https://github.com/harish2704/ckeditor5-build-strapi-wysiwyg/releases/download/v1.13.0-fixurlprefix/ckeditor5-build-strapi-wysiwyg-v1.13.0.tgz"
+  },
   "license": "MIT"
 }

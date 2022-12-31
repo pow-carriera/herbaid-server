@@ -1,5 +1,5 @@
 {
-  "/blogs": {
+  "/home": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogListResponse"
+                "$ref": "#/components/schemas/HomeListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Blog"
+        "Home"
       ],
       "parameters": [
         {
@@ -169,168 +169,7 @@
           }
         }
       ],
-      "operationId": "get/blogs"
-    },
-    "post": {
-      "responses": {
-        "200": {
-          "description": "OK",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
-              }
-            }
-          }
-        },
-        "400": {
-          "description": "Bad Request",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "401": {
-          "description": "Unauthorized",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "403": {
-          "description": "Forbidden",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "404": {
-          "description": "Not Found",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "500": {
-          "description": "Internal Server Error",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        }
-      },
-      "tags": [
-        "Blog"
-      ],
-      "parameters": [],
-      "operationId": "post/blogs",
-      "requestBody": {
-        "required": true,
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "#/components/schemas/BlogRequest"
-            }
-          }
-        }
-      }
-    }
-  },
-  "/blogs/{id}": {
-    "get": {
-      "responses": {
-        "200": {
-          "description": "OK",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
-              }
-            }
-          }
-        },
-        "400": {
-          "description": "Bad Request",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "401": {
-          "description": "Unauthorized",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "403": {
-          "description": "Forbidden",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "404": {
-          "description": "Not Found",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        },
-        "500": {
-          "description": "Internal Server Error",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Error"
-              }
-            }
-          }
-        }
-      },
-      "tags": [
-        "Blog"
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "",
-          "deprecated": false,
-          "required": true,
-          "schema": {
-            "type": "number"
-          }
-        }
-      ],
-      "operationId": "get/blogs/{id}"
+      "operationId": "get/home"
     },
     "put": {
       "responses": {
@@ -339,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogResponse"
+                "$ref": "#/components/schemas/HomeResponse"
               }
             }
           }
@@ -396,27 +235,16 @@
         }
       },
       "tags": [
-        "Blog"
+        "Home"
       ],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "",
-          "deprecated": false,
-          "required": true,
-          "schema": {
-            "type": "number"
-          }
-        }
-      ],
-      "operationId": "put/blogs/{id}",
+      "parameters": [],
+      "operationId": "put/home",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/BlogRequest"
+              "$ref": "#/components/schemas/HomeRequest"
             }
           }
         }
@@ -487,24 +315,13 @@
         }
       },
       "tags": [
-        "Blog"
+        "Home"
       ],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "",
-          "deprecated": false,
-          "required": true,
-          "schema": {
-            "type": "number"
-          }
-        }
-      ],
-      "operationId": "delete/blogs/{id}"
+      "parameters": [],
+      "operationId": "delete/home"
     }
   },
-  "/blogs/{id}/localizations": {
+  "/home/localizations": {
     "post": {
       "responses": {
         "200": {
@@ -512,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BlogLocalizationResponse"
+                "$ref": "#/components/schemas/HomeLocalizationResponse"
               }
             }
           }
@@ -569,27 +386,16 @@
         }
       },
       "tags": [
-        "Blog"
+        "Home"
       ],
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "",
-          "deprecated": false,
-          "required": true,
-          "schema": {
-            "type": "number"
-          }
-        }
-      ],
-      "operationId": "post/blogs/{id}/localizations",
+      "parameters": [],
+      "operationId": "post/home/localizations",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/BlogLocalizationRequest"
+              "$ref": "#/components/schemas/HomeLocalizationRequest"
             }
           }
         }
