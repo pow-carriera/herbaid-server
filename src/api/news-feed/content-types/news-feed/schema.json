@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_feeds",
+  "info": {
+    "singularName": "news-feed",
+    "pluralName": "news-feeds",
+    "displayName": "news-feed",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "hero": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

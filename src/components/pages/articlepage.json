@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_pages_articlepages",
+  "info": {
+    "displayName": "articlepage"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
