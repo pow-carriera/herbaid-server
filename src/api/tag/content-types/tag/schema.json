@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "remedies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::remedy.remedy",
+      "inversedBy": "tags"
+    },
+    "frequency": {
+      "type": "integer"
+    }
+  }
+}
