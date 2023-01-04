@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docregions",
+  "info": {
+    "singularName": "docregion",
+    "pluralName": "docregions",
+    "displayName": "docregion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "region": {
+      "type": "string"
+    },
+    "doctors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::doctor.doctor",
+      "inversedBy": "docregions"
+    },
+    "cities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::city.city",
+      "mappedBy": "docregions"
+    }
+  }
+}
