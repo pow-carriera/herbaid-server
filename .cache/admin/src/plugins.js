@@ -6,6 +6,7 @@ import ckeditor from '../../../node_modules/@_sh/strapi-plugin-ckeditor/strapi-a
 import documentation from '../../../node_modules/@strapi/plugin-documentation/strapi-admin.js';
 import i18N from '../../../node_modules/@strapi/plugin-i18n/strapi-admin.js';
 import usersPermissions from '../../../node_modules/@strapi/plugin-users-permissions/strapi-admin.js';
+import comments from '../../../node_modules/strapi-plugin-comments/strapi-admin.js';
 import entityRelationshipChart from '../../../node_modules/strapi-plugin-entity-relationship-chart/strapi-admin.js';
 
 
@@ -17,6 +18,7 @@ const plugins = {
   'documentation': documentation,
   'i18n': i18N,
   'users-permissions': usersPermissions,
+  'comments': comments,
   'entity-relationship-chart': entityRelationshipChart,
 };
 
